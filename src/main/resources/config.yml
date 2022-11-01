@@ -1,0 +1,92 @@
+#Plugin made by Caminoh_
+#VERSION: alpha
+
+#placeholders:
+
+# [Scoreboard] %Player% -> returns player name
+# [Scoreboard] %OnlinePlayers% -> returns the amount of all the players online
+# [Scoreboard] %MaxPlayers% -> returns max players amount
+
+#permissions:
+
+#messages#
+
+playerJoinsMessage: "Player %player% joined"
+playerLeavesMessage: "Player %player% leaved"
+flyEnabled: "&aFly enabled"
+flyDisabled: "&cFly disabled"
+gamemodeCreativeMessage: "&aYou're in creative mode"
+gamemodeSurvivalMessage: "&aYou're in survival mode"
+gamemodeSpectatorMessage: "&aYou're in spectator mode"
+playersHiddenMessage: "&cPlayers hidden"
+playersShownMessage: "&aPlayers shown"
+
+#messages-common-errors:
+noPlayerError: "&cCommand only for players"
+argsInvalidError: "&cInvalid args! </command help> for list of commands"
+chatLockedError: "&c can't send this message because the chat is locked!"
+noPermsError: "&c Insufficient permission to execute this command!"
+
+#messages-setup
+hologramCreated: "&aHologram created"
+
+#scoreboard#
+
+scoreboard_title: "&aYour title!"
+
+scoreboard:
+  line_1: "&c%Player%"
+  line_2: "&a%OnlinePlayers% / %MaxPlayers%"
+  line_3: "&fplay.yourminecraftserver.com"
+
+#inventory#
+
+inventory:
+  links:
+    material: "BOOK"
+    name: "&aLinks"
+    inventory_index: 0
+    message: "links: \n"
+    links: ["discord.servername.com", "site.sitename.com", "site.sitename.com"]
+  enderbutt:
+    name: "§5Enderbutt"
+    inventory_index: 1
+  parkour:
+    material: "LADDER"
+    name: "&aParkour"
+    command: "/parkour" #command to start the parkour
+    inventory_index: 3
+  selector:
+    material: "COMPASS"
+    name: "&cSelector"
+    inventory_index: 4
+    server:
+      gui_setting: #look at section "gui -> selector_gui" to modify the selection's gui
+        gui_name: "&cServer Selector"
+        gui_size: 36 #only multiples of 9
+        main_server: "LOBBY" #name of your main server
+  hidePlayer:
+    playersShownName: "&aHide player"
+    playersHideName: "&aShowPlayer"
+    inventory_index: 5
+
+#server selector gui
+server_gui:
+  Vanilla:
+    icon_material: "GRASS" #material in gui
+    server_name: "VANILLA" #name of the bungee server
+    name: "&aVanilla" #name of the material
+    inventory_index: 11
+  BedWars:
+    icon_material: "BED"
+    server_name: "BEDWARS"
+    name: "&cBedWars"
+    inventory_index: 12
+
+#tablist (tab-list will be soon implemented!)
+header: "Welcome to this server"
+footer: "rate this plugin 5 starts on spigot"
+
+#chat-filter
+filtered_messages: ["dio","cazzo","merda","puttana","bedwars1058"]
+filter: "****"

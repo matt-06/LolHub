@@ -1,0 +1,28 @@
+name: LolHub
+version: '${project.version}'
+main: LolHub.Core
+commands:
+  spawn:
+    description: "/spawn help for list of arguments"
+    usage: "/spawn <arg>"
+    aliases:
+      - sp
+      - lobby
+  hub:
+    description: "/hub to connect to the main server"
+    usage: "/hub"
+  lockchat:
+    description: "/lockchat help for list of arguments"
+    usage: "/lockchat"
+  fly:
+    description: "enables/disables fly"
+    usage: "/fly"
+  gmc:
+    description: "set the gamemode to creative"
+    usage: "/gmc <player>"
+  gms:
+    description: "set the gamemode to survival"
+    usage: "/gms <player>"
+  gmsp:
+    description: "set the gamemode to spectator"
+    usage: "/gmsp <player>"
